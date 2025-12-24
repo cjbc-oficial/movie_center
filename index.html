@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Centro de Filmes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0b0b10;
+      color:#fff;
+    }
+    header{
+      padding:20px;
+      background:#111;
+      font-size:22px;
+      font-weight:bold;
+      color:#e50914;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+      gap:15px;
+      padding:20px;
+    }
+    .card{
+      background:#1c1c1c;
+      border-radius:8px;
+      overflow:hidden;
+      cursor:pointer;
+      transition:.2s;
+    }
+    .card:hover{transform:scale(1.03)}
+    .card img{
+      width:100%;
+      display:block;
+    }
+    .card div{
+      padding:10px;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>🎬 Centro de Filmes</header>
+
+<section class="grid">
+  <div class="card" onclick="location.href='player.html'">
+    <img src="https://via.placeholder.com/300x450?text=FILME+1">
+    <div>Filme Exemplo</div>
+  </div>
+</section>
+
+</body>
+</html>
